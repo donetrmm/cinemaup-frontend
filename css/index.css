@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;300&family=Oswald&family=Syne&display=swap');
+
+
+:root{
+    --blueHeader:#001233;
+    --blueNav:#002855;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .titleHead{
+    width: 100%;
+    height: 4em;
+    background-color: var(--blueHeader);
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+header nav{
+    width: 100%;
+    height: 4em;
+    background-color: var(--blueNav);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+header nav a{
+    color: azure;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 3px;
+}
+.bannerInicio{
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-position: center center;
+}
