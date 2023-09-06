@@ -3,13 +3,18 @@
 
 :root{
     --blueHeader:#001233;
-    --blueNav:#002855;
+    --blueFondo:#002855;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+
 }
 header .titleHead{
     width: 100%;
@@ -26,7 +31,7 @@ header .titleHead{
 header nav{
     width: 100%;
     height: 4em;
-    background-color: var(--blueNav);
+    background-color: var(--blueFondo);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +45,77 @@ header nav a{
     letter-spacing: 3px;
 }
 .bannerInicio{
+    font-size: 16px;
     display: flex;
     align-items: end;
     background-size: cover;
     background-position: center center;
+    background-image: /*primer fondo*/linear-gradient(rgba(0,0,0,.50) 0% , rgba(0,0,0,0.50) 100%), /*segundo fondo*/url('../img/episodio3Banner.jpeg');
+    min-height: 40.62em;
+    color: azure;
+}
+.bannerInicio .contBanIncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6.25em; 
+    padding: 15px;
+    width: 25em;
+    padding-left: 50px;
+}
+.contInicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--blueFondo);
+    color: azure;
+}
+.contInicio h2{
+    margin-top: 15px;
+    letter-spacing: 10px;
+}
+.contInicio .tendencias{
+   margin-top: 2em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding: 40px;
+   justify-content: space-between;
+}
+.contInicio .tendencias .cardTendencia {
+    background-image: url('../img/oppenheimerPoster.jpg');
+    width: 440px; 
+    height: 660px; 
+    background-size: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); 
+    color: #fff;
+    display: flex; 
+    justify-content: center; 
+    margin: 10px;
+    flex: 1;
+}
+.contInicio .tendencias .cardTendencia1 {
+    background-image: url('../img/sonidoDeLibertadPoster.jpg');
+    width: 440px; 
+    height: 660px; 
+    background-size: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5); 
+    color: #fff;
+    display: flex; 
+    justify-content: center; 
+    margin: 10px;
+    flex: 1;
+}
+.contInicio .tendencias .cardTendencia p{
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: normal;
 }
