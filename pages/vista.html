@@ -1,71 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/vista.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/vista.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body onload="cargar()">
     <header>
-        <div class="titleHead"> 
-            <a href="/index.html">CINEMA UP</a>
-        </div>  
-        <nav>
-            <a href="/">INICIO</a>
-            <a href="/">SERIES</a>
-            <a href="/">PELICULAS</a>
-            <a href="/">POPULAR</a>
-            <a href="/">RECIENTES</a>
-        </nav>
+      <div class="titleHead">
+        <a href="../index.html">CINEMA UP</a>
+      </div>
+      <nav>
+        <a href="../index.html">INICIO</a>
+        <a href="./series.html">SERIES</a>
+        <a href="./peliculas.html">PELICULAS</a>
+        <a href="./popular.html">POPULAR</a>
+        <a href="./recientes.html">RECIENTES</a>
+      </nav>
     </header>
     <main>
-        <div class="bannerInicio">
-            <div class="contBanIncio">
-                <h2>STAR WARS: EPISODIO III - LA VENGANZA DE LOS SITH</h2>
-                <p>
-                    Seducido por el lado oscuro, Anakin Skywalker se rebela contra su mentor, Obi-Wan Kenobi, y se convierte en Darth Vader.
-                </p>
-            </div>
-        </div>
-        <div class="contenido"> 
-        <div class="trailer">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wVd22zr2XK4?si=L-7OREsFLq7qa3zD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
-        </div>
+      <div class="InicioContenedor" id="container"></div>
+
+      <div class="contenido">
+        <h2 class="titContenido">Reseñas de la Critica</h2>
+
         <div class="coments">
-            <div class="wrapper">
-                <div class="titleC">Work  </div>
-                <div class="descriptionC">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus    odio adipisci ducimus? Impedit est dolore maxime unde repudiandae blanditiis        veritatis accusamus, in fugit excepturi optio aperiam officia eius, omnis          numquam omnis  numquam. omnis   numquam.</p>
-                </div>
-             </div>
-             <div class="wrapper">
-                <div class="titleC">Work  </div>
-                <div class="descriptionC">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus    odio adipisci ducimus? Impedit est dolore maxime unde repudiandae blanditiis        veritatis accusamus, in fugit excepturi optio aperiam officia eius, omnis          numquam omnis  numquam. omnis   numquam.</p>
-                </div>
-             </div>
-             <div class="wrapper">
-                <div class="titleC">Work  </div>
-                <div class="descriptionC">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus    odio adipisci ducimus? Impedit est dolore maxime unde repudiandae blanditiis        veritatis accusamus, in fugit excepturi optio aperiam officia eius, omnis          numquam omnis  numquam. omnis   numquam.</p>
-                </div>
-             </div>
-             <div class="wrapper">
-                <div class="titleC">Work  </div>
-                <div class="descriptionC">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus    odio adipisci ducimus? Impedit est dolore maxime unde repudiandae blanditiis        veritatis accusamus, in fugit excepturi optio aperiam officia eius, omnis          numquam omnis  numquam. omnis   numquam.</p>
-                </div>
-             </div>
-             <div class="wrapper">
-                <div class="titleC">Work  </div>
-                <div class="descriptionC">
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus    odio adipisci ducimus? Impedit est dolore maxime unde repudiandae blanditiis        veritatis accusamus, in fugit excepturi optio aperiam officia eius, omnis          numquam omnis  numquam. omnis   numquam.</p>
-                </div>
-             </div> 
+          <div class="wrapper">
+            <div class="titleC">Una Obra Maestra Cinematográfica</div>
+            <div class="descriptionC">
+              <p>
+                Es una historia que es simplemente asombrosa. La dirección,
+                actuación y guión son excepcionales. Una experiencia
+                cinematográfica que te dejará sin aliento.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="titleC">Una Aventura Épica</div>
+            <div class="descriptionC">
+              <p>
+                Esta película/serie es una aventura épica que te sumerge en un
+                mundo completamente diferente. Los efectos visuales y la
+                ambientación son impresionantes.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="titleC">Una Interpretación Magistral</div>
+            <div class="descriptionC">
+              <p>
+                La actuación es simplemente excepcional. Los actores dan vida a
+                sus personajes de una manera que te hace olvidar que estás
+                viendo una actuación.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="titleC">Un Viaje Inolvidable</div>
+            <div class="descriptionC">
+              <p>
+                Esta obra de arte te lleva en un viaje emocional que te deja
+                pensando durante días. La cinematografía es impresionante, y
+                cada escena es visualmente impactante.
+              </p>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="titleC">Un Regalo para los Amantes del Cine</div>
+            <div class="descriptionC">
+              <p>
+                Esta obra es un regalo para los amantes del cine. La
+                cinematografía, la música y la dirección son de primera clase.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </main>
     <script src="../js/vista.js"></script>
-</body>
+  </body>
 </html>

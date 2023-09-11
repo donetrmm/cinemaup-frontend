@@ -1,76 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Movies</title>
-</head>
-<body>
+  </head>
+  <body onload="index()">
     <header>
-        <div class="titleHead"> 
-            <a href="/index.html">CINEMA UP</a>
-        </div>  
-        <nav>
-            <a href="/" class="pag">INICIO</a>
-            <a href="./pages/series.html">SERIES</a>
-            <a href="/">PELICULAS</a>
-            <a href="/">POPULAR</a>
-            <a href="/">RECIENTES</a>
-        </nav>
+      <div class="titleHead">
+        <a href="./index.html">CINEMA UP</a>
+      </div>
+      <nav>
+        <a href="./index.html" class="pag">INICIO</a>
+        <a href="./pages/series.html">SERIES</a>
+        <a href="./pages/peliculas.html">PELICULAS</a>
+        <a href="./pages/popular.html">POPULAR</a>
+        <a href="./pages/recientes.html">RECIENTES</a>
+      </nav>
     </header>
 
-    <main>
-        <div>
-            <div class="bannerInicio">
-                <div class="contBanIncio">
-                    <h2>STAR WARS: EPISODIO III - LA VENGANZA DE LOS SITH</h2>
-                    <p>
-                        Seducido por el lado oscuro, Anakin Skywalker se rebela contra su mentor, Obi-Wan Kenobi, y se convierte en Darth Vader.
-                    </p>
-                    <button>
-                        <a href="./pages/vista.html">VER</a>
-                    </button>
-                </div>
-            </div>
-            <div class="contInicio">
-                <h2>TENDENCIAS</h2>
-              <div class="tendencias">
-                <div class="cardTendencia">
-                    <p>
-                        Oppenheimer
-                    </p>
-                    <i class="fa-solid fa-circle-play" style="color: #f5f5f5;"></i>
-                </div>
-                <div class="cardTendencia1">
-                    <p>
-                        sonido de 
-                    </p>
-                 
-                    
-                </div>
-                <div class="cardTendencia">
-                    <p>
-                        Oppenheimer
-                    </p>
-                </div>
-             
-                <div class="cardTendencia">
-                    <p>
-                        Oppenheimer
-                    </p>
-                </div>
-               
-               
-                   
-                
-              </div>
-              <h2>RECIENTES</h2>
-            </div>
-             
+    <div>
+      <div class="bannerInicio">
+        <div class="contBanIncio">
+          <h1>STAR WARS: EPISODIO III - LA VENGANZA DE LOS SITH</h1>
+          <h5>
+            Seducido por el lado oscuro, Anakin Skywalker se rebela contra su
+            mentor, Obi-Wan Kenobi, y se convierte en Darth Vader.
+          </h5>
+          <button class="detalle" onclick="mandarID(23)">
+            <img src="./img/play.png" alt="play" />
+          </button>
         </div>
-    </main>
+      </div>
+      <div class="contenedor">
+        <h2>Tendencias</h2>
 
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-</body>
+        <div class="row" id="tendencias-container"></div>
+
+        <h2>Popular</h2>
+
+        <div class="row" id="popular-container"></div>
+
+        <h2>Top De Clasificacion</h2>
+
+        <div class="row" id="top-container"></div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

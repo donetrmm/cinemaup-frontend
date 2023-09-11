@@ -4,22 +4,22 @@ function mandarID(id) {
   window.location.href = "../pages/vista.html";
 }
 function cargarSeries() {
-  fetch("http://localhost:8081/api/series")
+  fetch("http://localhost:8081/api/seccion/Popular")
     .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
+    .then((popu) => {
+      console.log(popu);
       const peliculasContainer = document.getElementById("series-container");
       peliculasContainer.innerHTML = ""; // Limpia el contenido previo, si lo hubiera
 
-      data.forEach((series) => {
+      popu.forEach((pelicula) => {
         const peliculaHTML = `
             <div class="card">
             <div class="poster">
-            <img src="${series.imagen}" alt="${series.titulo}" class="img">
+            <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="img">
             </div>
             <div class="info">
-                <h3>${series.titulo}</h3>
-              <button class="btnCard" onclick="mandarID(${series.id})"><img src="../img/play.png" alt="play"></button>
+                <h3>${pelicula.titulo}</h3>
+              <button class="btnCard" onclick="mandarID(${pelicula.id})"><img src="../img/play.png" alt="play"></button>
               </div>
               <div class="backgroundWrapper"></div>
               </div>
